@@ -1,0 +1,197 @@
+
+/* Global styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Container styles */
+.signup-container {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+}
+
+/* Left side with background image */
+.signup-left {
+  flex: 1;
+  background-image: url('/assets/img/achebg.png');
+  background-size: cover;
+  background-position: right center;
+  position: relative;
+}
+
+/* Semi-transparent overlay */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: -10px;
+}
+
+/* Logo container */
+.logo-container {
+  text-align: center;
+}
+
+/* Logo image */
+.logo {
+  width: 400px;
+  height: auto;
+  margin-bottom: 0.5rem;
+  /* Replace with your own logo.png */
+}
+
+/* Brand name */
+.brand-name {
+  color: white;
+  font-size: 24px;
+  letter-spacing: 2px;
+  margin-top: 10px;
+}
+
+/* Right side with form */
+.signup-right {
+  flex: 1;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Form container */
+.form-container {
+  width: 100%;
+  max-width: 450px;
+  padding: 20px;
+}
+
+/* Form header */
+.form-header {
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+.form-header h1 {
+  font-size: 32px;
+  color: #333;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.form-header p {
+  color: #666;
+  font-size: 16px;
+}
+
+/* Form groups */
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 8px;
+  color: #555;
+  font-weight: 500;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 12px 16px;
+  border: 1px solid #e1e1e1;
+  border-radius: 8px;
+  font-size: 16px;
+  color: #333;
+  background-color: #fff;
+  transition: border-color 0.3s;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  outline: none;
+  border-color: #d70d66;
+  box-shadow: 0 0 0 2px rgba(233, 30, 99, 0.2);
+}
+
+.error-message {
+  color: #d70d66;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+/* Create Account button */
+.create-account-btn {
+  width: 100%;
+  padding: 14px 0;
+  background-color: #d70d66;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 10px;
+}
+
+.create-account-btn:hover {
+  background-color: #d70d66;
+}
+
+/* Login link */
+.login-link {
+  margin-top: 20px;
+  text-align: center;
+  color: #666;
+}
+
+.login-link a {
+  color: #d70d66;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.login-link a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .signup-container {
+    flex-direction: column;
+  }
+  
+  .signup-left {
+    height: 200px;
+    flex: none;
+  }
+  
+  .signup-right {
+    flex: 1;
+    padding: 15px;
+  }
+
+  .form-container {
+    padding: 15px;
+  }
+
+  .logo {
+    width: 100px;
+  }
+
+  .brand-name {
+    font-size: 20px;
+  }
+}
